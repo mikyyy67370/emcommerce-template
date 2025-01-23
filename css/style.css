@@ -1240,125 +1240,115 @@ body {
 
     /* Hero section ajustements */
     .hero {
-        flex-direction: column-reverse;
-        padding: 2rem 0;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
     }
 
     .hero-content {
-        padding: 2rem 1.5rem;
+        padding: 1rem;
         text-align: center;
+        order: 2; /* Place le contenu après l'image */
     }
 
+    .hero-image-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        order: 1; /* Place l'image en premier */
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-height: 60vh; /* Limite la hauteur à 60% de la hauteur de l'écran */
+        border-radius: 0; /* Supprime les bordures arrondies */
+        overflow: hidden;
+        margin-top: 60px; /* Espace pour le header fixe */
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%; /* Ajuste la position verticale de l'image */
+    }
+
+    /* Ajustement du contenu pour une meilleure lisibilité */
     .hero-content h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        color: #000;
     }
 
     .hero-content p {
         font-size: 1rem;
-        margin: 1.5rem auto;
-        max-width: 90%;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 
     .stats {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1.5rem;
         margin-top: 2rem;
+        background: #F2F0F1;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
     .stat-item {
-        flex: 0 0 45%;
+        background: #F2F0F1;
+        padding: 1rem;
+        border-radius: 8px;
     }
 
-    /* Brands section ajustements */
-    .brands-banner {
-        padding: 1.5rem 0;
-    }
-
-    .logos-group {
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-
-    .logos-group img {
-        height: 20px;
-    }
-
-    /* Featured Products ajustements */
-    .featured-products {
-        padding: 2rem 0;
-    }
-
-    .section-header {
-        margin-bottom: 1.5rem;
-        padding: 0 1rem;
-    }
-
-    .section-header h2 {
-        font-size: 1.5rem;
+    .stat-item h3 {
+        font-size: 1.8rem;
+        color: #000;
         margin-bottom: 0.5rem;
     }
 
-    .section-header p {
+    .stat-item p {
         font-size: 0.9rem;
+        color: #666;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        max-height: 50vh; /* Réduit encore la hauteur pour les très petits écrans */
     }
 
-    .products-grid {
-        gap: 1rem;
-        padding: 0 1rem;
+    .hero-content {
+        padding: 1rem 0.5rem;
     }
 
-    .product-card {
-        margin-bottom: 0.75rem;
+    .hero-content h1 {
+        font-size: 1.8rem;
+        padding: 0 0.5rem;
     }
 
-    .product-info {
-        padding: 0.75rem;
+    .hero-content p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
 
-    /* Categories ajustements */
-    .browse-categories {
-        padding: 2rem 0;
-    }
-
-    .categories-grid {
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-
-    /* Reviews ajustements */
-    .customer-reviews {
-        padding: 2rem 0;
-    }
-
-    .review-card {
-        min-width: 260px;
+    .shop-now {
+        display: inline-block;
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
         padding: 1rem;
-    }
-
-    /* Newsletter ajustements */
-    .newsletter {
-        padding: 2rem 1rem;
-    }
-
-    .newsletter-text h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .newsletter-form .input-group {
-        padding: 0;
-    }
-
-    /* Footer ajustements */
-    .footer {
-        padding: 2rem 0 1rem;
-    }
-
-    .footer-content {
-        gap: 1.5rem;
-        padding: 0 1rem;
+        text-align: center;
+        background: #000;
+        color: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
     }
 }
 
