@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Silk Scarf - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="product-details">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800" alt="Luxury Silk Scarf">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400" alt="Vue étalée" class="active">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc27?w=400" alt="Vue pliée">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc28?w=400" alt="Vue détaillée">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc29?w=400" alt="Vue portée">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Luxury Silk Scarf</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                            <span class="review-count">(92 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$59.99</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                        <div class="product-description">
+                            <p>Exquisite silk scarf handcrafted from 100% Mulberry silk. Features our signature artistic print inspired by botanical gardens. Each piece is individually printed and finished with hand-rolled edges.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de dimensions -->
+                    <div class="size-selector">
+                        <div class="section-title">
+                            <h3>Select Size</h3>
+                            <a href="#" class="size-guide">Styling Guide</a>
+                        </div>
+                        <div class="scarf-sizes">
+                            <button class="size-btn" data-size="small">
+                                <span class="size-label">Small Square</span>
+                                <span class="size-info">45cm x 45cm</span>
+                            </button>
+                            <button class="size-btn active" data-size="medium">
+                                <span class="size-label">Classic Square</span>
+                                <span class="size-info">90cm x 90cm</span>
+                            </button>
+                            <button class="size-btn" data-size="large">
+                                <span class="size-label">Large Rectangle</span>
+                                <span class="size-info">180cm x 90cm</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de motif -->
+                    <div class="pattern-selector">
+                        <h3>Select Pattern</h3>
+                        <div class="pattern-options">
+                            <button class="pattern-btn active" data-pattern="Floral">
+                                <div class="pattern-preview" style="background: url('https://example.com/floral-pattern.jpg')"></div>
+                                <span class="pattern-name">Spring Floral</span>
+                            </button>
+                            <button class="pattern-btn" data-pattern="Geometric">
+                                <div class="pattern-preview" style="background: url('https://example.com/geometric-pattern.jpg')"></div>
+                                <span class="pattern-name">Modern Geometric</span>
+                            </button>
+                            <button class="pattern-btn" data-pattern="Abstract">
+                                <div class="pattern-preview" style="background: url('https://example.com/abstract-pattern.jpg')"></div>
+                                <span class="pattern-name">Abstract Art</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Options de finition -->
+                    <div class="finishing-options">
+                        <h3>Select Finishing</h3>
+                        <div class="options-list">
+                            <div class="option-item">
+                                <input type="radio" name="finishing" id="hand-rolled" checked>
+                                <label for="hand-rolled">Hand-Rolled Edges (Included)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="radio" name="finishing" id="fringe">
+                                <label for="fringe">Silk Fringe Edges (+$10)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="gift-box">
+                                <label for="gift-box">Luxury Gift Box (+$15)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="monogram">
+                                <label for="monogram">Monogram Initials (+$20)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'luxury-silk-scarf',
+                            name: 'Luxury Silk Scarf',
+                            price: 39.99,
+                            image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26',
+                            quantity: 1
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections features, materials, etc. avec contenu spécifique -->
+
+    <!-- Ajouter avant la fermeture </body> -->
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

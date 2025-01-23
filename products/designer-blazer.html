@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Blazer - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">MIKE.CO</a>
+        </div>
+    </header>
+
+    <section class="product-details">
+        <div class="container">
+            <!-- Bouton retour -->
+            <a href="../new-arrivals.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Retour aux nouveautés
+            </a>
+            
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10" alt="Designer Blazer">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10" alt="Vue de face" class="active">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f11" alt="Vue de dos">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f12" alt="Vue détaillée">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f13" alt="Vue portée">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Designer Blazer</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                            <span class="review-count">(85 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$299.99</span>
+                        </div>
+                        <div class="product-description">
+                            <p>Un blazer sophistiqué conçu avec des matériaux premium. Sa coupe moderne et élégante s'adapte parfaitement à toutes les occasions professionnelles et formelles. Doublure en soie et boutons en métal doré.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de taille -->
+                    <div class="size-selector">
+                        <div class="section-title">
+                            <h3>Select Size</h3>
+                            <a href="#" class="size-guide">Size Guide</a>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="36">EU 36</button>
+                            <button class="size-btn" data-size="38">EU 38</button>
+                            <button class="size-btn active" data-size="40">EU 40</button>
+                            <button class="size-btn" data-size="42">EU 42</button>
+                            <button class="size-btn" data-size="44">EU 44</button>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de couleur -->
+                    <div class="color-selector">
+                        <h3>Select Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="Black" style="background-color: #000000;">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-btn" data-color="Navy" style="background-color: #000080;">
+                                <span class="color-name">Navy</span>
+                            </button>
+                            <button class="color-btn" data-color="Grey" style="background-color: #808080;">
+                                <span class="color-name">Grey</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99" id="quantity">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'designer-blazer',
+                            name: 'Designer Blazer',
+                            price: 299.99,
+                            image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10',
+                            quantity: parseInt(document.getElementById('quantity').value)
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

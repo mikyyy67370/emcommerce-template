@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Handbag - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">MIKE.CO</a>
+        </div>
+    </header>
+
+    <section class="product-details">
+        <div class="container">
+            <!-- Bouton retour -->
+            <a href="../sale.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Retour aux produits en solde
+            </a>
+            
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Designer Handbag">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Vue de face" class="active">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3b" alt="Vue de côté">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3c" alt="Vue détaillée">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3d" alt="Vue intérieure">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Luxury Designer Handbag</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                            <span class="review-count">(150 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$299.99</span>
+                            <span class="original-price">$499.99</span>
+                            <span class="discount">-40%</span>
+                        </div>
+                        <div class="product-description">
+                            <p>Un sac à main luxueux en cuir véritable avec des finitions métalliques dorées. Design intemporel et élégant, parfait pour toutes les occasions. Comprend une bandoulière ajustable et des compartiments intérieurs organisés.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de couleur -->
+                    <div class="color-selector">
+                        <h3>Select Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="Black" style="background-color: #000000;">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-btn" data-color="Tan" style="background-color: #D2B48C;">
+                                <span class="color-name">Tan</span>
+                            </button>
+                            <button class="color-btn" data-color="Burgundy" style="background-color: #800020;">
+                                <span class="color-name">Burgundy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99" id="quantity">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'designer-handbag',
+                            name: 'Luxury Designer Handbag',
+                            price: 299.99,
+                            image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a',
+                            quantity: parseInt(document.getElementById('quantity').value)
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

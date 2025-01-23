@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk Blouse - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="product-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../clothing.html">Clothing</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Silk Blouse</span>
+            </nav>
+
+            <div class="product-grid">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../images/products/silk-blouse-main.jpg" alt="Silk Blouse">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="../images/products/silk-blouse-1.jpg" alt="Front view" class="active">
+                        <img src="../images/products/silk-blouse-2.jpg" alt="Back view">
+                        <img src="../images/products/silk-blouse-3.jpg" alt="Side view">
+                        <img src="../images/products/silk-blouse-4.jpg" alt="Details">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1>Elegant Silk Blouse</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0/5 (94 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$179.99</span>
+                            <span class="original-price">$229.99</span>
+                            <span class="discount">-20%</span>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Luxurious pure silk blouse with elegant draping and refined details. Features mother-of-pearl buttons and a flattering cut suitable for both casual and formal occasions.</p>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selector">
+                        <div class="size-header">
+                            <h3>Select Size</h3>
+                            <button class="size-guide-btn">Size Guide</button>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">
+                                <span class="size-label">S</span>
+                                <span class="size-info">Small</span>
+                            </button>
+                            <button class="size-btn active" data-size="M">
+                                <span class="size-label">M</span>
+                                <span class="size-info">Medium</span>
+                            </button>
+                            <button class="size-btn" data-size="L">
+                                <span class="size-label">L</span>
+                                <span class="size-info">Large</span>
+                            </button>
+                            <button class="size-btn" data-size="XL">
+                                <span class="size-label">XL</span>
+                                <span class="size-info">Extra Large</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selector">
+                        <h3>Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="White" style="background-color: #FFFFFF; border: 1px solid #e0e0e0;">
+                                <span class="color-name">White</span>
+                            </button>
+                            <button class="color-btn" data-color="Cream" style="background-color: #FFFDD0;">
+                                <span class="color-name">Cream</span>
+                            </button>
+                            <button class="color-btn" data-color="Black" style="background-color: #000000;">
+                                <span class="color-name">Black</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Actions -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="product-meta">
+                        <div class="delivery-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="stock-info">
+                            <i class="fas fa-check"></i>
+                            <span>In Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html> 

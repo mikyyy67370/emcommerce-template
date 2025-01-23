@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Collection - SHOP.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/casual.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header existant -->
+
+    <section class="casual-page">
+        <div class="container">
+            <!-- En-tête de la page -->
+            <div class="page-header">
+                <div class="header-content">
+                    <h1>Casual Collection</h1>
+                    <p class="subtitle">Effortless style for everyday comfort</p>
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <button class="filter-btn">
+                            <i class="fas fa-filter"></i>
+                            Filters
+                        </button>
+                        <div class="size-filter">
+                            <select>
+                                <option value="">Size</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        <div class="color-filter">
+                            <select>
+                                <option value="">Color</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="beige">Beige</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <select class="sort-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille des produits -->
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-product-id="casual1">
+                    <div class="product-image">
+                        <img src="images/casual1.jpg" alt="Casual T-Shirt">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Essential Cotton T-Shirt</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$29.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autres produits similaires (3 de plus) -->
+                <!-- ... -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">10</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer existant -->
+
+    <script src="js/cart.js"></script>
+    <script src="js/casual.js"></script>
+</body>
+</html> 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Jacket - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="product-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../clothing.html">Clothing</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Winter Jacket</span>
+            </nav>
+
+            <div class="product-grid">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800" alt="Winter Jacket">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" alt="Front view" class="active">
+                        <img src="https://images.unsplash.com/photo-1544923246-77307dd654cb?w=400" alt="Back view">
+                        <img src="https://images.unsplash.com/photo-1557418669-db3f781a58c0?w=400" alt="Side view">
+                        <img src="https://images.unsplash.com/photo-1578932750294-f5075e85f44a?w=400" alt="Details">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1>Premium Winter Jacket</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0/5 (156 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$249.99</span>
+                            <span class="original-price">$349.99</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Premium winter jacket with advanced thermal insulation. Features water-resistant outer shell, warm down filling, and multiple pockets. Perfect for cold weather conditions.</p>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selector">
+                        <div class="size-header">
+                            <h3>Select Size</h3>
+                            <button class="size-guide-btn">Size Guide</button>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">
+                                <span class="size-label">S</span>
+                                <span class="size-info">Small</span>
+                            </button>
+                            <button class="size-btn active" data-size="M">
+                                <span class="size-label">M</span>
+                                <span class="size-info">Medium</span>
+                            </button>
+                            <button class="size-btn" data-size="L">
+                                <span class="size-label">L</span>
+                                <span class="size-info">Large</span>
+                            </button>
+                            <button class="size-btn" data-size="XL">
+                                <span class="size-label">XL</span>
+                                <span class="size-info">Extra Large</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selector">
+                        <h3>Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="Navy" style="background-color: #000080;">
+                                <span class="color-name">Navy</span>
+                            </button>
+                            <button class="color-btn" data-color="Black" style="background-color: #000000;">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-btn" data-color="Green" style="background-color: #355E3B;">
+                                <span class="color-name">Forest Green</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Actions -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="product-meta">
+                        <div class="delivery-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="stock-info">
+                            <i class="fas fa-check"></i>
+                            <span>In Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html> 

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Cotton Shirt - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">MIKE.CO</a>
+            <!-- ... reste du header ... -->
+        </div>
+    </header>
+    <section class="product-details">
+        <div class="container">
+            <!-- Bouton retour -->
+            <a href="../products.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Retour aux produits
+            </a>
+            
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1604695573706-53170668f6a6?w=800" alt="Casual Cotton Shirt">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1604695573706-53170668f6a6?w=400" alt="Vue de face" class="active">
+                        <img src="https://images.unsplash.com/photo-1604695573787-46b9a0e54c3b?w=400" alt="Vue de dos">
+                        <img src="https://images.unsplash.com/photo-1604695573834-6c5a1b4c0d1f?w=400" alt="Vue détaillée">
+                        <img src="https://images.unsplash.com/photo-1604695573901-6b5a1b4c0d2a?w=400" alt="Vue portée">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Casual Cotton Shirt</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                            <span class="review-count">(110 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$69.99</span>
+                            <span class="discount">-28%</span>
+                        </div>
+                        <div class="product-description">
+                            <p>Elevate your casual wardrobe with this premium cotton shirt. Featuring a modern cut and superior comfort, this versatile piece is perfect for both casual outings and smart-casual occasions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de taille -->
+                    <div class="size-selector">
+                        <div class="section-title">
+                            <h3>Select Size</h3>
+                            <a href="#" class="size-guide">Size Guide</a>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">
+                                <span class="size-label">S</span>
+                                <span class="size-info">Small</span>
+                            </button>
+                            <button class="size-btn active" data-size="M">
+                                <span class="size-label">M</span>
+                                <span class="size-info">Medium</span>
+                            </button>
+                            <button class="size-btn" data-size="L">
+                                <span class="size-label">L</span>
+                                <span class="size-info">Large</span>
+                            </button>
+                            <button class="size-btn" data-size="XL">
+                                <span class="size-label">XL</span>
+                                <span class="size-info">Extra Large</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de couleur -->
+                    <div class="color-selector">
+                        <h3>Select Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="White" style="background-color: #FFFFFF;">
+                                <span class="color-name">White</span>
+                            </button>
+                            <button class="color-btn" data-color="Light Blue" style="background-color: #B8D8EB;">
+                                <span class="color-name">Light Blue</span>
+                            </button>
+                            <button class="color-btn" data-color="Pink" style="background-color: #FFD1DC;">
+                                <span class="color-name">Pink</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99" id="productQuantity">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'casual-cotton-shirt',
+                            name: 'Casual Cotton Shirt',
+                            price: 49.99,
+                            image: 'https://images.unsplash.com/photo-1604695573706-53170668f6a6',
+                            quantity: parseInt(document.getElementById('productQuantity').value)
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Section Caractéristiques -->
+                    <div class="product-features">
+                        <h3>Caractéristiques</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-tshirt"></i>
+                                <span>100% coton peigné</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-wind"></i>
+                                <span>Tissu respirant</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-temperature-low"></i>
+                                <span>Idéal pour toutes les saisons</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Coupe régulière moderne</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section Description -->
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p>Cette chemise en coton casual incarne le parfait équilibre entre style et confort. Confectionnée à partir de coton de première qualité, elle offre une sensation de douceur incomparable tout en assurant une excellente respirabilité. Sa coupe moderne et décontractée s'adapte à toutes les morphologies et convient aussi bien pour une journée au bureau que pour une sortie décontractée.</p>
+                    </div>
+
+                    <!-- Section Entretien -->
+                    <div class="product-care">
+                        <h3>Guide d'entretien</h3>
+                        <div class="care-instructions">
+                            <div class="care-item">
+                                <i class="fas fa-temperature-low"></i>
+                                <span>Lavage à 30°C</span>
+                            </div>
+                            <div class="care-item">
+                                <i class="fas fa-ban"></i>
+                                <span>Ne pas utiliser de javel</span>
+                            </div>
+                            <div class="care-item">
+                                <i class="fas fa-tshirt"></i>
+                                <span>Repassage à température moyenne</span>
+                            </div>
+                            <div class="care-item">
+                                <i class="fas fa-drum"></i>
+                                <span>Séchage en machine à basse température</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Avis Clients -->
+                    <div class="product-reviews">
+                        <div class="reviews-header">
+                            <h3>Avis Clients</h3>
+                            <div class="rating-summary">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-average">4.5/5</span>
+                                <span class="review-count">(128 avis)</span>
+                            </div>
+                        </div>
+
+                        <!-- Liste des avis -->
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Michel D.</h4>
+                                        <span class="review-date">15 mars 2024</span>
+                                    </div>
+                                    <div class="review-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review-text">Excellente chemise ! La qualité du tissu est remarquable et la coupe est parfaite. Je la porte aussi bien au bureau que pour les sorties décontractées.</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Sophie L.</h4>
+                                        <span class="review-date">10 mars 2024</span>
+                                    </div>
+                                    <div class="review-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review-text">Très satisfaite de cet achat. Le tissu est doux et agréable à porter. Seul petit bémol : le repassage est un peu délicat.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bouton pour voir plus d'avis -->
+                        <button class="load-more-reviews">
+                            Voir plus d'avis
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections features, materials, etc. avec contenu spécifique -->
+    <script src="../js/cart.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const quantityInput = document.getElementById('productQuantity');
+        const minusBtn = document.querySelector('.qty-btn.minus');
+        const plusBtn = document.querySelector('.qty-btn.plus');
+
+        // Gestion du bouton moins
+        minusBtn.addEventListener('click', () => {
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        // Gestion du bouton plus
+        plusBtn.addEventListener('click', () => {
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue < 99) {
+                quantityInput.value = currentValue + 1;
+            }
+        });
+
+        // Empêcher la saisie manuelle de valeurs invalides
+        quantityInput.addEventListener('change', () => {
+            let value = parseInt(quantityInput.value);
+            if (isNaN(value) || value < 1) value = 1;
+            if (value > 99) value = 99;
+            quantityInput.value = value;
+        });
+    });
+    </script>
+</body>
+</html> 

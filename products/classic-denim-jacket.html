@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Denim Jacket - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="product-details">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?w=800" alt="Classic Denim Jacket">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?w=400" alt="Vue de face" class="active">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0e1?w=400" alt="Vue de dos">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0e2?w=400" alt="Vue détaillée">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0e3?w=400" alt="Vue portée">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Classic Denim Jacket</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                            <span class="review-count">(142 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$119.99</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                        <div class="product-description">
+                            <p>A timeless denim jacket crafted from premium Japanese denim. Features classic button-front closure, chest pockets, and adjustable waist tabs. Perfect for layering and versatile styling throughout the seasons.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de taille -->
+                    <div class="size-selector">
+                        <div class="section-title">
+                            <h3>Select Size</h3>
+                            <a href="#" class="size-guide">Size Guide</a>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">
+                                <span class="size-label">S</span>
+                                <span class="size-info">Small</span>
+                            </button>
+                            <button class="size-btn active" data-size="M">
+                                <span class="size-label">M</span>
+                                <span class="size-info">Medium</span>
+                            </button>
+                            <button class="size-btn" data-size="L">
+                                <span class="size-label">L</span>
+                                <span class="size-info">Large</span>
+                            </button>
+                            <button class="size-btn" data-size="XL">
+                                <span class="size-label">XL</span>
+                                <span class="size-info">Extra Large</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de wash -->
+                    <div class="color-selector">
+                        <h3>Select Wash</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="Light Wash" style="background-color: #A4B7C9;">
+                                <span class="color-name">Light Wash</span>
+                            </button>
+                            <button class="color-btn" data-color="Medium Wash" style="background-color: #5B7C99;">
+                                <span class="color-name">Medium Wash</span>
+                            </button>
+                            <button class="color-btn" data-color="Dark Wash" style="background-color: #2B4C6F;">
+                                <span class="color-name">Dark Wash</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Options de personnalisation -->
+                    <div class="customization-options">
+                        <h3>Customization</h3>
+                        <div class="custom-options">
+                            <div class="custom-option">
+                                <input type="checkbox" id="distressing">
+                                <label for="distressing">Add Distressing (+$10)</label>
+                            </div>
+                            <div class="custom-option">
+                                <input type="checkbox" id="patches">
+                                <label for="patches">Custom Patches (+$15)</label>
+                            </div>
+                            <div class="custom-option">
+                                <input type="checkbox" id="embroidery">
+                                <label for="embroidery">Custom Embroidery (+$20)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'classic-denim-jacket',
+                            name: 'Classic Denim Jacket',
+                            price: 89.99,
+                            image: 'https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef',
+                            quantity: 1
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections features, materials, etc. avec contenu spécifique -->
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

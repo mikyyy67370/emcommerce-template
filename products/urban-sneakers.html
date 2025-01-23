@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Sneakers - MIKE.CO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="product-details">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800" alt="Urban Sneakers">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=400" alt="Vue de face" class="active">
+                        <img src="https://images.unsplash.com/photo-1552346155-9739d2d5f2cb?w=400" alt="Vue de côté">
+                        <img src="https://images.unsplash.com/photo-1552346156-1f4d7fe6f2b8?w=400" alt="Vue de dessus">
+                        <img src="https://images.unsplash.com/photo-1552346157-0c01e4f9caaa?w=400" alt="Vue de la semelle">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-basic-info">
+                        <h1>Urban Sneakers</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                            <span class="review-count">(88 Reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                            <span class="original-price">$99.99</span>
+                            <span class="discount">-20%</span>
+                        </div>
+                        <div class="product-description">
+                            <p>Step into style with our Urban Sneakers. Featuring advanced cushioning technology, breathable mesh upper, and a durable rubber outsole. Perfect for both athletic performance and street style.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de pointure -->
+                    <div class="size-selector">
+                        <div class="section-title">
+                            <h3>Select Size</h3>
+                            <a href="#" class="size-guide">Size Guide</a>
+                        </div>
+                        <div class="shoe-sizes">
+                            <button class="size-btn" data-size="38">EU 38</button>
+                            <button class="size-btn" data-size="39">EU 39</button>
+                            <button class="size-btn active" data-size="40">EU 40</button>
+                            <button class="size-btn" data-size="41">EU 41</button>
+                            <button class="size-btn" data-size="42">EU 42</button>
+                            <button class="size-btn" data-size="43">EU 43</button>
+                            <button class="size-btn" data-size="44">EU 44</button>
+                            <button class="size-btn" data-size="45">EU 45</button>
+                        </div>
+                    </div>
+
+                    <!-- Sélection de couleur -->
+                    <div class="color-selector">
+                        <h3>Select Color</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="White/Black" style="background: linear-gradient(45deg, #FFFFFF 50%, #000000 50%);">
+                                <span class="color-name">White/Black</span>
+                            </button>
+                            <button class="color-btn" data-color="Navy/White" style="background: linear-gradient(45deg, #000080 50%, #FFFFFF 50%);">
+                                <span class="color-name">Navy/White</span>
+                            </button>
+                            <button class="color-btn" data-color="Grey/Red" style="background: linear-gradient(45deg, #808080 50%, #FF0000 50%);">
+                                <span class="color-name">Grey/Red</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Options supplémentaires -->
+                    <div class="shoe-options">
+                        <h3>Additional Options</h3>
+                        <div class="options-list">
+                            <div class="option-item">
+                                <input type="checkbox" id="extra-laces">
+                                <label for="extra-laces">Extra Laces Set (+$5)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="water-protection">
+                                <label for="water-protection">Water Protection Treatment (+$10)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="premium-insoles">
+                                <label for="premium-insoles">Premium Comfort Insoles (+$15)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions d'achat -->
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+
+                        <a href="../cart.html" class="add-to-cart-btn" onclick="addToCart(event, {
+                            id: 'urban-sneakers',
+                            name: 'Urban Sneakers',
+                            price: 79.99,
+                            image: 'https://images.unsplash.com/photo-1552346154-21d32810aba3',
+                            quantity: 1
+                        })">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </a>
+
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections features, materials, etc. avec contenu spécifique -->
+
+    <!-- Ajouter avant la fermeture </body> -->
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

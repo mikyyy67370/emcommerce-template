@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE.CO - Trouvez votre style</title>
+    <!-- Ajout des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Desktop -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">MIKE.CO</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Shop</a></li>
+                    <li><a href="sale.html">On Sale</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Mobile -->
+    <header class="header-mobile">
+        <div class="logo">MIKE.CO</div>
+        <div class="header-right">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <a href="cart.html" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="menu-btn" id="menuMobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="menuMobile">
+        <div class="menu-header">
+            <div class="logo">MIKE.CO</div>
+            <button class="close-menu" id="menuMobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="new-arrivals.html">Nouveautés</a></li>
+            <li><a href="sale.html">Soldes</a></li>
+            <li><a href="casual.html">Casual</a></li>
+            <li><a href="products/designer-blazer.html">Blazers</a></li>
+            <li><a href="products/silk-blouse.html">Chemises</a></li>
+            <li><a href="products/floral-summer-dress.html">Robes</a></li>
+            <li><a href="products/designer-leather-bag.html">Sacs</a></li>
+            <li><a href="products/designer-shoes.html">Chaussures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Contenu principal -->
+        <div class="hero-content">
+            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <a href="product.html" class="shop-now">Shop Now</a>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>200+</h3>
+                    <p>International<br>Brands</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2,000+</h3>
+                    <p>High-Quality<br>Products</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30,000+</h3>
+                    <p>Happy<br>Customers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image et marques -->
+        <div class="hero-image-container">
+            <div class="brands-banner">
+                <div class="scroll-wrapper">
+                    <!-- Premier groupe de logos -->
+                    <div class="logos-group">
+                        <img src="images/versace.png" alt="Versace">
+                        <img src="images/zara.png" alt="Zara">
+                        <img src="images/gucci.png" alt="Gucci">
+                        <img src="images/prada.png" alt="Prada">
+                        <img src="images/calvin-klein.png" alt="Calvin Klein">
+                    </div>
+                    <!-- Duplication pour le scroll infini -->
+                    <div class="logos-group">
+                        <img src="images/versace.png" alt="Versace">
+                        <img src="images/zara.png" alt="Zara">
+                        <img src="images/gucci.png" alt="Gucci">
+                        <img src="images/prada.png" alt="Prada">
+                        <img src="images/calvin-klein.png" alt="Calvin Klein">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Models wearing trendy clothes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Section (Desktop) -->
+    <section class="brands-banner-desktop">
+        <div class="brands-container">
+            <div class="scroll-wrapper">
+                <!-- Premier groupe de logos -->
+                <div class="logos-group">
+                    <img src="images/versace.png" alt="Versace">
+                    <img src="images/zara.png" alt="Zara">
+                    <img src="images/gucci.png" alt="Gucci">
+                    <img src="images/prada.png" alt="Prada">
+                    <img src="images/calvin-klein.png" alt="Calvin Klein">
+                </div>
+                <!-- Duplication pour le scroll infini -->
+                <div class="logos-group">
+                    <img src="images/versace.png" alt="Versace">
+                    <img src="images/zara.png" alt="Zara">
+                    <img src="images/gucci.png" alt="Gucci">
+                    <img src="images/prada.png" alt="Prada">
+                    <img src="images/calvin-klein.png" alt="Calvin Klein">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="featured-products new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2>NEW ARRIVALS</h2>
+                <p>Latest fashion trends and styles</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604695573706-53170668f6a6" alt="Casual Cotton Shirt">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/casual-cotton-shirt.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Cotton Shirt</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$69.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572804013427-4d7ca7268217" alt="Floral Summer Dress">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/floral-summer-dress.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Summer Dress</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$59.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Designer Leather Bag">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/designer-leather-bag.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Leather Bag</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$129.99</span>
+                            <span class="original-price">$159.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" alt="Urban Sneakers">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/urban-sneakers.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Sneakers</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Section -->
+    <section class="featured-products top-selling">
+        <div class="container">
+            <div class="section-header">
+                <h2>TOP SELLING</h2>
+                <p>Most popular choices by our customers</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef" alt="Classic Denim Jacket">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/classic-denim-jacket.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Denim Jacket</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$119.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76" alt="Premium Leather Boots">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/premium-leather-boots.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Leather Boots</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$199.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3" alt="Wool Winter Coat">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/wool-winter-coat.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wool Winter Coat</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                            <span class="original-price">$249.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26" alt="Luxury Silk Scarf">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/luxury-silk-scarf.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Silk Scarf</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$59.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse By Category Section -->
+    <section class="browse-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>BROWSE BY CATEGORY</h2>
+                <p>Find what you are looking for by category</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/category-casual.jpg" alt="Casual">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Casual</h3>
+                        <span class="item-count">200+ Products</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/category-formal.jpg" alt="Formal">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Formal</h3>
+                        <span class="item-count">150+ Products</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/category-streetwear.jpg" alt="Streetwear">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Streetwear</h3>
+                        <span class="item-count">100+ Products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>CUSTOMER REVIEWS</h2>
+                <p>What our customers are saying about us</p>
+            </div>
+
+            <div class="reviews-container">
+                <div class="reviews-scroll">
+                    <!-- Premier groupe d'avis -->
+                    <div class="reviews-group">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Sarah M.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">2 days ago</div>
+                            </div>
+                            <p class="review-text">"I'm blown away by the quality and style of the clothes I received. The attention to detail and fit is perfect. Will definitely be shopping here again!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb1.jpg" alt="Product">
+                                <span>Classic Denim Jacket</span>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Alex K.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">1 week ago</div>
+                            </div>
+                            <p class="review-text">"The customer service is exceptional, and the clothes are even better than I expected. The sizing guide was spot on!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb2.jpg" alt="Product">
+                                <span>Urban Sneakers</span>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Emily R.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">2 weeks ago</div>
+                            </div>
+                            <p class="review-text">"Fast shipping and the quality of the formal wear is outstanding. Perfect for my business meetings!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb3.jpg" alt="Product">
+                                <span>Business Casual Set</span>
+                            </div>
+                        </div>
+
+                        <!-- Ajout de 4 nouveaux avis -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Michael P.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">3 days ago</div>
+                            </div>
+                            <p class="review-text">"The streetwear collection is fire! Every piece I've bought has become a staple in my wardrobe. Great quality and style!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb4.jpg" alt="Product">
+                                <span>Urban Streetwear Set</span>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Sophie L.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">1 week ago</div>
+                            </div>
+                            <p class="review-text">"Love the minimalist designs and the quality of fabrics. Perfect for my professional wardrobe!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb5.jpg" alt="Product">
+                                <span>Minimalist Collection</span>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>David R.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">5 days ago</div>
+                            </div>
+                            <p class="review-text">"The accessories collection is outstanding. The attention to detail and craftsmanship is exceptional!"</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb6.jpg" alt="Product">
+                                <span>Premium Accessories</span>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-details">
+                                        <h4>Lisa M.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">4 days ago</div>
+                            </div>
+                            <p class="review-text">"The seasonal collection is always on point! Love how they keep up with trends while maintaining quality."</p>
+                            <div class="review-product">
+                                <img src="images/product-thumb7.jpg" alt="Product">
+                                <span>Seasonal Collection</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplication pour le scroll infini -->
+                    <div class="reviews-group">
+                        <!-- Dupliquer tous les avis ici -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <p>Get the latest updates on new products and upcoming sales</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            <span class="terms">I agree to receive marketing emails</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-column brand-col">
+                    <h3 class="footer-logo">MIKE.CO</h3>
+                    <p>We are more than just a fashion store. We bring you the latest trends and styles to express yourself.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Shop Column -->
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Collections</a></li>
+                        <li><a href="#">Winter Edition</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Column -->
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column contact-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                        <p><i class="fas fa-envelope"></i> contact@mike.co</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Paris, France</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 MIKE.CO. All rights reserved.</p>
+                </div>
+                <div class="payment-methods">
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fab fa-apple-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menu des sections -->
+    <div class="sections-menu" id="sectionsMenu">
+        <div class="sections-content">
+            <button class="close-sections" id="closeSections">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="sections-grid">
+                <div class="section-category">
+                    <h3>Collections</h3>
+                    <ul>
+                        <li><a href="new-arrivals.html">Nouveautés</a></li>
+                        <li><a href="sale.html">Soldes</a></li>
+                        <li><a href="casual.html">Casual</a></li>
+                    </ul>
+                </div>
+                <div class="section-category">
+                    <h3>Vêtements</h3>
+                    <ul>
+                        <li><a href="products/designer-blazer.html">Blazers</a></li>
+                        <li><a href="products/silk-blouse.html">Chemises</a></li>
+                        <li><a href="products/floral-summer-dress.html">Robes</a></li>
+                    </ul>
+                </div>
+                <div class="section-category">
+                    <h3>Accessoires</h3>
+                    <ul>
+                        <li><a href="products/designer-leather-bag.html">Sacs</a></li>
+                        <li><a href="products/designer-shoes.html">Chaussures</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html> 

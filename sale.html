@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Sale - SHOP.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sale.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">MIKE.CO</a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="sale.html" class="active">Sale</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="account.html" class="account-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="sale-page">
+        <div class="container">
+            <!-- En-tête de la page -->
+            <div class="page-header">
+                <div class="header-content">
+                    <h1>On Sale</h1>
+                    <p class="subtitle">Great deals up to 70% off</p>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn">
+                        <i class="fas fa-filter"></i>
+                        Filters
+                    </button>
+                    <select class="sort-select">
+                        <option value="discount">Biggest Discount</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille des produits -->
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-product-id="sale1">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604644401890-0bd678c83788" alt="Winter Jacket">
+                        <div class="discount-badge">-50%</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/winter-jacket.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Winter Jacket</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$179.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product-card" data-product-id="sale2">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Designer Handbag">
+                        <div class="discount-badge">-40%</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/designer-handbag.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Designer Handbag</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$299.99</span>
+                            <span class="original-price">$499.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product-card" data-product-id="sale3">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572804013427-4d7ca7268217" alt="Floral Summer Dress">
+                        <div class="discount-badge">-50%</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/floral-summer-dress.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Summer Dress</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product-card" data-product-id="sale4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76" alt="Premium Leather Boots">
+                        <div class="discount-badge">-45%</div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-actions">
+                            <a href="products/premium-leather-boots.html" class="view-product-btn">
+                                <i class="fas fa-eye"></i>
+                                See the Product
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Leather Boots</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0/5</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$129.99</span>
+                            <span class="original-price">$239.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">10</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer existant -->
+
+    <script src="js/cart.js"></script>
+    <script src="js/sale.js"></script>
+</body>
+</html> 

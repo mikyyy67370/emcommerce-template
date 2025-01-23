@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits - MIKE.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">MIKE.CO</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#" class="active">Shop</a></li>
+                    <li><a href="sale.html">On Sale</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher un produit...">
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Produits -->
+    <section class="products-section">
+        <div class="container">
+            <!-- En-tête avec filtres -->
+            <div class="products-header">
+                <h1>Nos Produits</h1>
+                <div class="filters">
+                    <select class="sort-select">
+                        <option value="newest">Les plus récents</option>
+                        <option value="price-low">Prix croissant</option>
+                        <option value="price-high">Prix décroissant</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille des produits -->
+            <div class="products-grid">
+                <!-- Casual Cotton Shirt -->
+                <div class="product-card">
+                    <a href="products/casual-cotton-shirt.html" class="product-link">
+                        <img src="https://images.unsplash.com/photo-1604695573706-53170668f6a6" alt="Casual Cotton Shirt">
+                        <div class="product-info">
+                            <h3>Casual Cotton Shirt</h3>
+                            <div class="product-price">
+                                <span class="current-price">49.99 €</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Classic White Shirt -->
+                <div class="product-card">
+                    <a href="products/classic-white-shirt.html" class="product-link">
+                        <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157" alt="Classic White Shirt">
+                        <div class="product-info">
+                            <h3>Classic White Shirt</h3>
+                            <div class="product-price">
+                                <span class="current-price">45.99 €</span>
+                                <span class="original-price">59.99 €</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Autres produits -->
+                <!-- Ajouter les autres cartes produits de la même manière -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart.js"></script>
+</body>
+</html> 
